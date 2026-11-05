@@ -1,6 +1,6 @@
 # Cart or Close? — Predicting Online Purchase Intent
 
-**Live app:** <STREAMLIT_APP_LINK>
+**Live app:** https://ml-assignment-2-govind.streamlit.app/
 **Repository:** https://github.com/CHGovind1/ml-assignment-2
 
 ## a. Problem statement
