@@ -1,6 +1,7 @@
 # Cart or Close? — Predicting Online Purchase Intent
 
 **Live app:** https://ml-assignment-2-govind.streamlit.app/
+
 **Repository:** https://github.com/CHGovind1/ml-assignment-2
 
 ## a. Problem statement
@@ -21,7 +22,10 @@ An e-commerce site wants to know, from the behaviour recorded during a browsing 
 
 **Preprocessing:** 80/20 stratified train/test split (`random_state=42`). Numeric features are standardised; Month, VisitorType and the integer-coded OperatingSystems / Browser / Region / TrafficType are one-hot encoded (they are IDs, not quantities). For Gaussian Naive Bayes only the numeric features are used, after a Yeo-Johnson power transform, because one-hot 0/1 columns and heavily skewed durations violate its Gaussian assumption. Preprocessing is stored inside each saved pipeline, so the app applies exactly the training-time transformations. Logistic Regression, Decision Tree and SVM use `class_weight="balanced"` to handle the imbalance.
 
-## c. GitHub repository
+## c. GitHub Repository Link
+https://github.com/CHGovind1/ml-assignment-2
+
+Repository structure:
 ```
 ├── app.py                 # Streamlit app (loads saved models, no retraining)
 ├── train_models.py        # trains & evaluates the 5 models, saves them + test_data.csv
